@@ -14,6 +14,7 @@ correcciones = [
     "Rack4-",
     "Rack 2-",
     "iJF Small-",
+    "ijF Small-",
     "IJF-",
     "==",
 ]

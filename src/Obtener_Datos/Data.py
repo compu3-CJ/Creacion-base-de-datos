@@ -30,7 +30,7 @@ def procesar_Data(archivos):
                 # Modificar algo de cada nombre del equipo
                 # for y in datos[1]:
                 
-                print(datos)
+                
                 # Guardo los datos procesados
                 contenido.append(datos)        
     
