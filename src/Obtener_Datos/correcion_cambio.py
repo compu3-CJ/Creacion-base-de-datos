@@ -21,5 +21,9 @@ correcciones = [
 
 cambios = [
     ["Nev.", "Nevera"],
-    ["ExhibidorCongelados", "Exhibidor Congelados"]
+    ["ExhibidorCongelados", "Exhibidor Congelados"],
+    ["RACK BAJA TEMP-196", "RACK DE BAJA TEMPERATURA"],
+    ["RACK MEDIA TEMP-197", "RACK DE MEDIA TEMPERATURA"],
+    ["RACK R507A","RACK REFRIGERACIÓN"],
+    ["RACK R507","RACK REFRIGERACIÓN"]
 ]
