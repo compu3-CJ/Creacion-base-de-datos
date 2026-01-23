@@ -17,7 +17,7 @@ def seleccionar_archivos():
     # Puedes filtrar por extensiones específicas en 'filetypes'
     rutas = filedialog.askopenfilenames(
         title="Selecciona los archivos para el algoritmo",
-        filetypes=(("Archivos de datos", "*.csv *.txt *.xlsx"), ("Todos los archivos", "*.*"))
+        filetypes=(("Archivos de datos", "*.csv *.txt *.xlsx *.xlsm"), ("Todos los archivos", "*.*"))
     )
 
     # 4. Destruimos la instancia de root para liberar memoria
