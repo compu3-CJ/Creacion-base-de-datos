@@ -1,5 +1,34 @@
 import tkinter as tk
 from tkinter import filedialog
+import os
+import glob
+
+def obtener_archivos_carpeta(carpeta_path, extension='*'):
+    """
+    Obtiene todas las rutas de archivos en una carpeta específica.
+    
+    Parámetros:
+    - carpeta_path (str): Ruta de la carpeta a buscar
+    - extension (str): Extensión de archivos a buscar (por defecto '*' para todos)
+                      Ejemplos: '*.csv', '*.txt', '*.xlsx'
+    
+    Retorna:
+    - Lista de rutas completas de los archivos encontrados
+    """
+    if not os.path.exists(carpeta_path):
+        raise FileNotFoundError(f"La carpeta no existe: {carpeta_path}")
+    
+    patron = os.path.join(carpeta_path, extension)
+    archivos = glob.glob(patron)
+    
+    # Ordenar alfabéticamente
+    archivos.sort()
+    
+    print(f"Se encontraron {len(archivos)} archivos en '{carpeta_path}':")
+    for archivo in archivos:
+        print(f"  - {os.path.basename(archivo)}")
+    
+    return archivos
 
 def seleccionar_archivos():
     """
